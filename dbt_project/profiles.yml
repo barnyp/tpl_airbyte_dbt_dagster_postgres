@@ -1,0 +1,12 @@
+dbt_project:
+  outputs:
+    dev:
+      dbname: dbtlearn
+      host: junction.proxy.rlwy.net
+      pass: faiLPzrImpwXMRJolixIlNBwvuKZLOgs
+      port: 12736
+      schema: stg
+      threads: 1
+      type: postgres
+      user: postgres
+  target: dev
