@@ -1,6 +1,6 @@
-# Airbyte-dbt-Dagster Integration
+# Airbyte-dbt-Dagster-Postgres Integration
 
-Welcome to the "Airbyte-dbt-Dagster Integration" repository! This repo provides a quickstart template for building a full data stack using Airbyte, Dagster, dbt, and Postgres. Easily extract data from Postgres, load it into Postgres, and apply necessary transformations using dbt, all orchestrated seamlessly with Dagster. While this template doesn't delve into specific data or transformations, its goal is to showcase the synergy of these tools.
+Welcome to the "Airbyte-dbt-Dagster-Postgres Integration" repository! This repo provides a quickstart template for building a full data stack using Airbyte, Dagster, dbt, and Postgres. Easily extract data from Postgres, load it into Postgres, and apply necessary transformations using dbt, all orchestrated seamlessly with Dagster. While this template doesn't delve into specific data or transformations, its goal is to showcase the synergy of these tools.
 
 This quickstart is designed to minimize setup hassles and propel you forward.
 
