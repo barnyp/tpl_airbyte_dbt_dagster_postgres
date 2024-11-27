@@ -1,6 +1,6 @@
 # Airbyte-dbt-Dagster Integration
 
-Welcome to the "Airbyte-dbt-Dagster Integration" repository! This repo provides a quickstart template for building a full data stack using Airbyte, Dagster, dbt, and BigQuery. Easily extract data from Postgres, load it into BigQuery, and apply necessary transformations using dbt, all orchestrated seamlessly with Dagster. While this template doesn't delve into specific data or transformations, its goal is to showcase the synergy of these tools.
+Welcome to the "Airbyte-dbt-Dagster Integration" repository! This repo provides a quickstart template for building a full data stack using Airbyte, Dagster, dbt, and Postgres. Easily extract data from Postgres, load it into Postgres, and apply necessary transformations using dbt, all orchestrated seamlessly with Dagster. While this template doesn't delve into specific data or transformations, its goal is to showcase the synergy of these tools.
 
 This quickstart is designed to minimize setup hassles and propel you forward.
 
@@ -84,7 +84,7 @@ Airbyte allows you to create connectors for sources and destinations, facilitati
     - `main.tf`: Contains the main configuration for creating Airbyte resources.
     - `variables.tf`: Holds various variables, including credentials.
 
-   Adjust the configurations in these files to suit your project's needs. Specifically, provide credentials for your Postgres and BigQuery connections. You can utilize the `variables.tf` file to manage these credentials.
+   Adjust the configurations in these files to suit your project's needs. Specifically, provide credentials for your Postgres connections. You can utilize the `variables.tf` file to manage these credentials.
 
 3. **Initialize Terraform**:
    
@@ -113,7 +113,7 @@ Airbyte allows you to create connectors for sources and destinations, facilitati
 
 ## 3. Setting Up the dbt Project
 
-[dbt (data build tool)](https://www.getdbt.com/) allows you to transform your data by writing, documenting, and executing SQL workflows. Setting up the dbt project requires specifying connection details for your data platform, in this case, BigQuery. Here’s a step-by-step guide to help you set this up:
+[dbt (data build tool)](https://www.getdbt.com/) allows you to transform your data by writing, documenting, and executing SQL workflows. Setting up the dbt project requires specifying connection details for your data platform, in this case, Postgres. Here’s a step-by-step guide to help you set this up:
 
 1. **Navigate to the dbt Project Directory**:
 
@@ -124,7 +124,7 @@ Airbyte allows you to create connectors for sources and destinations, facilitati
 
 2. **Update Connection Details**:
 
-   You'll find a `profiles.yml` file within the directory. This file contains configurations for dbt to connect with your data platform. Update this file with your BigQuery connection details.
+   You'll find a `profiles.yml` file within the directory. This file contains configurations for dbt to connect with your data platform. Update this file with your Postgres connection details.
 
 3. **Utilize Environment Variables (Optional but Recommended)**:
 
@@ -132,12 +132,12 @@ Airbyte allows you to create connectors for sources and destinations, facilitati
 
 4. **Test the Connection**:
 
-   Once you’ve updated the connection details, you can test the connection to your BigQuery instance using:
+   Once you’ve updated the connection details, you can test the connection to your Postgres instance using:
    ```bash
    dbt debug
    ```
 
-   If everything is set up correctly, this command should report a successful connection to BigQuery.
+   If everything is set up correctly, this command should report a successful connection to Postgres.
 
 ## 4. Orchestrating with Dagster
 
