@@ -6,7 +6,7 @@ dbt_project:
       pass: "{{ env_var('POSTGRES_PASS') }}"
       port: "{{ env_var('POSTGRES_PORT') | int }}"
       schema: "{{ env_var('POSTGRES_SCHEMA') }}"
-      threads: "{{ env_var('POSTGRES_THREADS') }}"
+      threads: "{{ env_var('POSTGRES_THREADS') | int }}"
       type: postgres
       user: "{{ env_var('POSTGRES_USER') }}"
   target: dev
