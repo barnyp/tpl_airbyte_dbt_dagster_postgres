@@ -4,7 +4,7 @@ setup(
     name="airbyte-dbt-dagster",
     packages=find_packages(),
     install_requires=[
-        "dbt-bigquery",
+        "dbt-postgres",
         "dagster",
         "dagster-cloud",
         "dagster-dbt",
